@@ -1,10 +1,14 @@
+* {
+    margin: 0;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
     background: #f8f9fa;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -15,6 +19,10 @@
 .menu__text ul {
     display: flex;
     list-style: none;
+    left: 1110px;
+    flex-direction: row;
+    position: relative;
+
 }
 
 .menu__text a {
@@ -31,25 +39,159 @@
 }
 
 /* main */
-#main__title{
+#main__title {
     background-color: rgba(242, 212, 174, 1);
 }
 
-#main__text{
+#main__text {
     background-color: rgba(242, 139, 48, 1);
 }
 
-.cards__de__cima{
- margin: auto;
+
+.cards__de__cima {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+
+.cards__de__baixo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+#card1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(242, 212, 174, 1);
+    border-radius: 13px;
+    order: 1;
+
+}
+
+#card1 img {
+    border: 2px solid black;
+    background-color: white;
+    order: 1;
+   
+
+}
+
+/* #card2 {
+    width: 18%;
+    height: 25%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(242, 212, 174, 1);
+    border-radius: 13px;
+    order: 2;
+}
+
+#card2 img {
+    border: 2px solid black;
+    background-color: white;
+    height: 10%;
+    order: 2;
+}
+
+#card3 {
+    width: 18%;
+    height: 25%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(242, 212, 174, 1);
+    border-radius: 13px;
+}
+
+#card3 img {
+    border: 2px solid black;
+    background-color: white;
+    height: 10%;
+}
+
+#card4 {
+    width: 18%;
+    height: 25%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(242, 212, 174, 1);
+    border-radius: 13px;
+}
+
+#card4 img {
+    border: 2px solid black;
+    background-color: white;
+    height: 10%;
+}
+
+#card5 {
+    width: 18%;
+    height: 25%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(242, 212, 174, 1);
+    border-radius: 13px;
+}
+
+#card5 img {
+    border: 2px solid black;
+    background-color: white;
+     width: 200%;
+    height: 200%;
+     justify-content: center;
+    align-items: center;
+}
+
+#card6 {
+    width: 18%;
+    height: 25%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(242, 212, 174, 1);
+    border-radius: 13px;
+}
+
+#card6 img {
+    border: 2px solid black;
+    background-color: white;
+    height: 10%;
+} */
+
+#Divulga__title {
+    background-color: rgba(242, 212, 174, 1);
+}
+
+.Divulga {
+    background-color: rgba(242, 139, 48, 1);
+    align-items: center;
+    text-align: center;
 }
 
 
 /* Footer */
 .footer {
-  text-align: center;
-  padding: 1rem;
-  background: #2c3e50;
-  color: white;
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: white;
 }
 
 
@@ -65,9 +207,12 @@
 
 #shimeji {
     position: absolute;
-    bottom: 20px; /* Distância do fundo */
-    left: -100px; /* Começa fora da tela */
+    bottom: 20px;
+    /* Distância do fundo */
+    left: -100px;
+    /* Começa fora da tela */
     width: 80px;
     height: auto;
-    transform: scaleX(-1); /* Gira a imagem se estiver virada para a esquerda */
+    transform: scaleX(-1);
+    /* Gira a imagem se estiver virada para a esquerda */
 }
