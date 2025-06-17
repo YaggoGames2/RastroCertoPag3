@@ -4,41 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./JS/menuhamburguer.js" defer></script>
 
     <title>Ongs / Protetores</title>
 </head>
 
 <body>
-    <header class="header">
-        <header class="logo__menu">
-            <a href="#" class="logo">
-                <img src="./img/Cookie Logo.png" alt="RastroCerto">
-            </a>
+    <!-- Cabeçalho com logo e menu -->
+    <header class="cabecalho">
+        <a href="#" class="logo">
+            <img src="./img/Cookie Logo.png" alt="RastroCerto" />
+        </a>
 
-            <nav class="menu__text">
-                <!-- <button class="menu-mobile" aria-label="Abrir Menu">☰</button> -->
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#radar">Radar de Pets</a></li>
-                    <li><a href="#ongs">ONGs/Protetores</a></li>
-                    <li><a href="#final-feliz">Final Feliz</a></li>
-                    <li><a href="#minha-area">Minha Área</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#radar">Radar de Pets</a></li>
+                <li><a href="#ongs">ONGs/Protetores</a></li>
+                <li><a href="#final-feliz">Final Feliz</a></li>
+                <li><a href="#minha-area">Minha Área</a></li>
+            </ul>
+        </nav>
     </header>
+
+
 
     <!-- main -->
 
     <section class="'main">
-        <h1 id="main__title"> Ongs / Protetores</h1>
-        <p id="main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor vitae eaque autem,
-            veniam consectetur deserunt minus itaque iusto quod voluptatem? Iure possimus dolorum maiores, totam
-            expedita
-            nostrum tempora tempore?
-        </p>
+        <h1 id="main__title"> <img src="./img/patinhas.png.svg" alt=""> Conheça as ONGs e Protetores <img
+                src="./img/patinhas.png.svg" alt=""> </h1>
+        <p id="main__text">Todo animal resgatado tem uma história – e, muitas vezes, ela começa com alguém comum fazendo
+            algo extraordinário. Na Baixada Santista, são muitas as mãos anônimas que acolhem, tratam e lutam
+            diariamente por vidas que a cidade esqueceu. São protetores independentes, pequenos grupos, ONGs que se
+            sustentam com doações, rifas, bazares e muito amor. Neste espaço, queremos que você conheça quem está por
+            trás dessas ações. Gente que transforma abandono em esperança, dor em recomeço.</p>
 
         <section class="cards__de__cima">
             <div id="card1">
@@ -75,22 +84,29 @@
             </div>
 
             <div id="card6">
-                <img src="./img/Samucat.jpg" alt="">
+                <img src="./img/protetorcard6.png" alt="">
                 <p>SamuCats</p>
                 <input type="button" value="Onde Estamos:" class="form__button" onclick="">
             </div>
         </section>
 
         <section class="Divulga__Ong">
-            <h2 id="Divulga__title">Divulga ONG</h2>
+            <h2 id="Divulga__title"> <img src="./img/patinhas.png.svg" alt=""> Cadastro de Ações e Eventos <img
+                    src="./img/patinhas.png.svg" alt=""> </h2>
             <div class="Divulga">
                 <h3 id="ProjetoGratis__title">Divulgue o seu projeto aqui, é grátis!</h3>
-                <p id="Divulga__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti
-                    nostrum a
-                    dolores qui. Minus ipsa molestiae id asperiores, est autem laudantium amet soluta tempora quisquam
-                    quaerat,
-                    deserunt eius nihil.</p>
-            </div>
+                <div id="Divulga__text">
+                    <p>Tem um projeto ou evento voltado à causa animal?
+                        Seja uma ação de doação e resgate, voluntariado, feira de adoção ou uma palestra sobre posse
+                        responsável, queremos conhecer!
+                        Preencha o formulário e aguarde nosso retorno — caso aprovado, seu projeto será divulgado aqui
+                        no
+                        site.
+                        Acreditamos que, para fazer a diferença, é essencial alcançar o público certo.
+                        Por isso, o Rastro Certo também é um espaço para impulsionar iniciativas por meio do marketing
+                        digital, parcerias e,
+                        quando possível, até com apoio da mídia tradicional. Vamos juntos?</p>
+                </div>
         </section>
     </section>
 </body>
@@ -100,10 +116,7 @@
 <footer class="footer">
 
     <div class="direitos">
-        <p>© 2025 RastroCerto. Todos os direitos reservados.</p>
-    </div>
-    <div id="shimeji-container">
-        <img src="./img/GATO.gif" alt="Shimeji" id="shimeji">
+        <p>© 2025 RastroCerto. Todos os direitos reservados por .</p>
     </div>
 </footer>
 
