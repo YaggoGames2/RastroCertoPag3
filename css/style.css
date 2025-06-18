@@ -7,7 +7,7 @@
 body {
     line-height: 1.6;
     color: #333;
-    background-color:#f8f9fa;    
+    background-color: #f8f9fa;
 }
 
 /* Cabeçalho */
@@ -17,22 +17,23 @@ body {
     align-items: center;
     padding: 1rem 5%;
     background: c;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 100;
 }
- 
+
 .logo img {
     max-width: 180px;
     height: auto;
 }
+
 /* Menu de navegação */
 .nav-menu ul {
     display: flex;
     list-style: none;
     gap: 1rem;
 }
- 
+
 .nav-menu a {
     text-decoration: none;
     color: #2c3e50;
@@ -41,12 +42,12 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
- 
+
 .nav-menu a:hover {
     background: #38a9f5;
     color: white;
 }
- 
+
 /* Botão hambúrguer */
 .hamburger {
     display: none;
@@ -56,14 +57,14 @@ body {
     height: 21px;
     cursor: pointer;
 }
- 
+
 .hamburger span {
     background: #2c3e50;
     height: 3px;
     border-radius: 3px;
     transition: all 0.3s ease;
 }
- 
+
 /* Menu responsivo ativo */
 .nav-menu.active {
     display: flex;
@@ -75,9 +76,9 @@ body {
     width: 100%;
     padding: 1rem 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
- 
+
 .nav-menu.active ul {
     flex-direction: column;
     align-items: center;
@@ -88,33 +89,43 @@ body {
     .nav-menu {
         display: none;
     }
- 
+
     .hamburger {
         display: flex;
     }
- 
+
     .nav-menu ul {
         flex-direction: column;
         gap: 0.5rem;
     }
 }
- 
+
 /* main */
 .main {
     background-size: cover;
     position: relative;
 }
 
-#main__text{
-        font-size: 20px;
+#main__text {
+    font-size: 18px;
+    background-color: rgba(242, 212, 174, 1);
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: center;
 }
 
 #main__title {
     background-color: rgba(255, 150, 17, 1);
+    font-size: 25px;
+    padding: 0.5%;
+    padding-left: 2%;
 }
 
-#main__text {
-    background-color: rgba(242, 212, 174, 1);
+#main__title img {
+    width: 35px;
+    height: 30px;
 }
 
 .form__button {
@@ -152,6 +163,7 @@ body {
     height: 290px;
     box-shadow: 0px 4.5px 6px lab(0% 0 0 / 0.486);
     transition: transform 1s ease;
+    font-size: 16px;
 }
 
 #card1 img {
@@ -171,6 +183,7 @@ body {
 #card1 p {
     margin: 18px 0px;
     gap: 200px;
+    font-size: 18px;
 }
 
 #card1:hover {
@@ -210,6 +223,7 @@ body {
 #card2 p {
     margin: 18px 0px;
     gap: 200px;
+    font-size: 18px;
 }
 
 #card2:hover {
@@ -222,7 +236,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color:rgba(255, 150, 17, 1);
+    background-color: rgba(255, 150, 17, 1);
     border-radius: 13px;
     order: 3;
     gap: 100px;
@@ -248,6 +262,7 @@ body {
 #card3 p {
     margin: 18px 0px;
     gap: 200px;
+    font-size: 18px;
 }
 
 #card3:hover {
@@ -286,6 +301,7 @@ body {
 #card4 p {
     margin: 18px 0px;
     gap: 200px;
+    font-size: 18px;
 }
 
 #card4:hover {
@@ -324,6 +340,7 @@ body {
 #card5 p {
     margin: 18px 0px;
     gap: 200px;
+    font-size: 18px;
 }
 
 #card5:hover {
@@ -362,6 +379,7 @@ body {
 #card6 p {
     margin: 18px 0px;
     gap: 200px;
+    font-size: 18px;
 }
 
 #card6:hover {
@@ -370,27 +388,38 @@ body {
 
 #Divulga__title {
     background-color: rgba(255, 150, 17, 1);
-    font-size: 30px;
+    font-size: 25px;
+    padding: 0.5%;
+    padding-left: 2%;
 }
 
 #Divulga__title img {
- height: 10%;
+    height: auto;
+    width: 35px;
+    height: 30px;
 }
 
-
-#ProjetoGratis__title{
-    font-size: 24px;
+#ProjetoGratis__title {
+    font-size: 20px;
     gap: 10px;
+    padding-top: 1%;
 }
+
 .Divulga {
     background-color: rgba(242, 212, 174, 1);
     align-items: center;
     text-align: center;
 }
 
-#Divulga__text{
-    font-size: 20px;
+#Divulga__text {
+    font-size: 18px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: justify;
 }
+
 
 
 /* Footer */
@@ -400,4 +429,3 @@ body {
     background: #2c3e50;
     color: white;
 }
-
