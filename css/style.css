@@ -101,6 +101,7 @@ body {
 }
 
 /* main */
+
 .main {
     background-size: cover;
     position: relative;
@@ -128,8 +129,13 @@ body {
     height: 30px;
 }
 
-.form__button {
-    background-color: white;
+.title {
+    font-size: 12px;
+}
+
+.info {
+    font-size: 12px;
+    padding-top: ;
 }
 
 .cards__de__cima {
@@ -180,14 +186,27 @@ body {
 
 }
 
-#card1 p {
-    margin: 18px 0px;
-    gap: 200px;
-    font-size: 18px;
-}
-
 #card1:hover {
     transform: scale(1.1);
+}
+
+#card1 .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 3rem;
+    visibility: hidden;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+#card1:hover .details {
+
+    visibility: visible;
 }
 
 #card2 {
@@ -206,7 +225,6 @@ body {
     transition: transform 1s ease;
 }
 
-
 #card2 img {
     order: 2;
     width: 100%;
@@ -220,14 +238,27 @@ body {
     height: 157px;
 }
 
-#card2 p {
-    margin: 18px 0px;
-    gap: 200px;
-    font-size: 18px;
-}
-
 #card2:hover {
     transform: scale(1.1);
+}
+
+#card2 .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 3rem;
+    visibility: hidden;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+#card2:hover .details {
+
+    visibility: visible;
 }
 
 #card3 {
@@ -259,10 +290,23 @@ body {
     height: 157px;
 }
 
-#card3 p {
-    margin: 18px 0px;
-    gap: 200px;
-    font-size: 18px;
+#card3 .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 3rem;
+    visibility: hidden;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+#card3:hover .details {
+
+    visibility: visible;
 }
 
 #card3:hover {
@@ -298,10 +342,23 @@ body {
     height: 157px;
 }
 
-#card4 p {
-    margin: 18px 0px;
-    gap: 200px;
-    font-size: 18px;
+#card4 .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 3rem;
+    visibility: hidden;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+#card4:hover .details {
+
+    visibility: visible;
 }
 
 #card4:hover {
@@ -337,10 +394,23 @@ body {
     height: 157px;
 }
 
-#card5 p {
-    margin: 18px 0px;
-    gap: 200px;
-    font-size: 18px;
+#card5 .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 3rem;
+    visibility: hidden;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+#card5:hover .details {
+
+    visibility: visible;
 }
 
 #card5:hover {
@@ -376,10 +446,23 @@ body {
     height: 157px;
 }
 
-#card6 p {
-    margin: 18px 0px;
-    gap: 200px;
-    font-size: 18px;
+#card6 .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 3rem;
+    visibility: hidden;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+#card6:hover .details {
+
+    visibility: visible;
 }
 
 #card6:hover {
@@ -428,4 +511,39 @@ body {
     padding: 1rem;
     background: #2c3e50;
     color: white;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 750px) {
+
+    .cards__de__cima,
+    .cards__de__baixo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .cards__de__baixo{
+      row-gap: 100px;
+    }
+
+    #Divulga_title {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main_title {
+        justify-items: center;
+        text-align: center;
+    }
+
+    #main__title img {
+        width: 35px;
+        height: 30px;
+        align-items: center;
+    }
 }
