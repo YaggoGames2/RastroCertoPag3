@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
+
 }
 
 /* Cabeçalho */
@@ -129,30 +130,27 @@ body {
     height: 30px;
 }
 
-.title {
-    font-size: 12px;
+.tile {
+    width: 30%;
 }
 
+.title,
 .info {
-    font-size: 12px;
-    padding-top: ;
-}
-
-.cards__de__cima {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30rem;
-    padding: 2rem;
+    font-size: 14px;
+    text-align: center;
 
 }
 
-.cards__de__baixo {
+.cards {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 30rem;
-    padding: 2rem;
+    max-width: 100%;
+    align-items: center;
+    padding: 2%;
+    flex-wrap: wrap;
+    column-gap: 300px;
+    row-gap: 60px;
+
 }
 
 #card1 {
@@ -191,13 +189,16 @@ body {
 }
 
 #card1 .details {
-    position: absolute;
+    padding-top: 13%;
+    padding-bottom: 19%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.65);
     color: #fff;
-    padding: 3rem;
     visibility: hidden;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
@@ -243,13 +244,16 @@ body {
 }
 
 #card2 .details {
-    position: absolute;
+    padding-top: 9%;
+    padding-bottom: 14%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.65);
     color: #fff;
-    padding: 3rem;
     visibility: hidden;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
@@ -291,13 +295,15 @@ body {
 }
 
 #card3 .details {
-    position: absolute;
-    bottom: 0;
+    padding-top: 14%;
+    padding-bottom: 18%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.65);
     color: #fff;
-    padding: 3rem;
     visibility: hidden;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
@@ -327,6 +333,7 @@ body {
     height: 290px;
     box-shadow: 0px 4.5px 6px lab(0% 0 0 / 0.486);
     transition: transform 1s ease;
+
 }
 
 #card4 img {
@@ -343,13 +350,16 @@ body {
 }
 
 #card4 .details {
-    position: absolute;
+    padding-top: 11%;
+    padding-bottom: 12%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.65);
     color: #fff;
-    padding: 3rem;
     visibility: hidden;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
@@ -379,6 +389,7 @@ body {
     height: 290px;
     box-shadow: 0px 4.5px 6px lab(0% 0 0 / 0.486);
     transition: transform 1s ease;
+
 }
 
 #card5 img {
@@ -395,13 +406,16 @@ body {
 }
 
 #card5 .details {
-    position: absolute;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.65);
     color: #fff;
-    padding: 3rem;
+    padding-top: 9%;
+    padding-bottom: 14%;
     visibility: hidden;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
@@ -409,7 +423,6 @@ body {
 }
 
 #card5:hover .details {
-
     visibility: visible;
 }
 
@@ -431,6 +444,7 @@ body {
     height: 290px;
     box-shadow: 0px 4.5px 6px lab(0% 0 0 / 0.486);
     transition: transform 1s ease;
+
 }
 
 #card6 img {
@@ -447,7 +461,6 @@ body {
 }
 
 #card6 .details {
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -455,6 +468,11 @@ body {
     color: #fff;
     padding: 3rem;
     visibility: hidden;
+    padding-top: 14%;
+    padding-bottom: 18%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
@@ -503,6 +521,11 @@ body {
     text-align: justify;
 }
 
+/* Estilo padrão para os cards (já existe, mas vamos garantir largura) */
+.cards-container>div {
+    width: 300px;
+    /* Ajuste se necessário */
+}
 
 
 /* Footer */
@@ -514,36 +537,40 @@ body {
 }
 
 
-/* Responsividade */
+/* Responsivo: Tablets (até 768px) */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 750px) {
 
-    .cards__de__cima,
-    .cards__de__baixo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 100px;
+
+    #main__text,
+    #Divulga__text {
+        padding-left: 20px;
+        padding-right: 20px;
+
     }
 
-    .cards__de__baixo{
-      row-gap: 100px;
-    }
-
-    #Divulga_title {
+    #main__title,
+    #Divulga__title {
         text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #main_title {
-        justify-items: center;
-        text-align: center;
-    }
-
-    #main__title img {
-        width: 35px;
-        height: 30px;
-        align-items: center;
     }
 }
+
+/* Responsivo: Celulares (até 480px) */
+@media screen and (max-width: 480px) {
+    .cards {
+        padding: 10%;
+    }
+
+    #main__text,
+    #Divulga__text {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    #main__title,
+    #Divulga__title {
+        text-align: center;
+    }
+}
+
