@@ -1,14 +1,13 @@
 * {
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
-
+    font-family: Arial, sans-serif;
 }
 
 /* Cabeçalho */
@@ -49,6 +48,12 @@ body {
     color: white;
 }
 
+.Ongs-link {
+    background: #38a9f5;
+    color: white !important;
+    border-radius: 5px;
+}
+
 /* Botão hambúrguer */
 .hamburger {
     display: none;
@@ -85,7 +90,7 @@ body {
     align-items: center;
 }
 
-/* Responsivo */
+/* Responsivo menu */
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
@@ -102,7 +107,6 @@ body {
 }
 
 /* main */
-
 .main {
     background-size: cover;
     position: relative;
@@ -130,15 +134,11 @@ body {
     height: 30px;
 }
 
-.tile {
-    width: 30%;
-}
-
+/* cards */
 .title,
 .info {
     font-size: 14px;
     text-align: center;
-
 }
 
 .cards {
@@ -150,9 +150,9 @@ body {
     flex-wrap: wrap;
     column-gap: 300px;
     row-gap: 60px;
-
 }
 
+/* card1 */
 #card1 {
     width: 253.5px;
     border: 2px solid black;
@@ -181,7 +181,6 @@ body {
     display: block;
     height: 157px;
     border-bottom: 2px solid black;
-
 }
 
 #card1:hover {
@@ -206,10 +205,10 @@ body {
 }
 
 #card1:hover .details {
-
     visibility: visible;
 }
 
+/* card2 */
 #card2 {
     width: 253.5px;
     border: 2px solid black;
@@ -261,10 +260,10 @@ body {
 }
 
 #card2:hover .details {
-
     visibility: visible;
 }
 
+/* card3 */
 #card3 {
     width: 253.5px;
     border: 2px solid black;
@@ -295,8 +294,8 @@ body {
 }
 
 #card3 .details {
-    padding-top: 14%;
-    padding-bottom: 18%;
+    padding-top: 10%;
+    padding-bottom: 14%;
     display: flex;
     justify-items: center;
     flex-direction: column;
@@ -319,6 +318,7 @@ body {
     transform: scale(1.1);
 }
 
+/* card4 */
 #card4 {
     width: 253.5px;
     border: 2px solid black;
@@ -333,7 +333,6 @@ body {
     height: 290px;
     box-shadow: 0px 4.5px 6px lab(0% 0 0 / 0.486);
     transition: transform 1s ease;
-
 }
 
 #card4 img {
@@ -367,7 +366,6 @@ body {
 }
 
 #card4:hover .details {
-
     visibility: visible;
 }
 
@@ -375,6 +373,7 @@ body {
     transform: scale(1.1);
 }
 
+/* card5 */
 #card5 {
     width: 253.5px;
     border: 2px solid black;
@@ -389,7 +388,6 @@ body {
     height: 290px;
     box-shadow: 0px 4.5px 6px lab(0% 0 0 / 0.486);
     transition: transform 1s ease;
-
 }
 
 #card5 img {
@@ -430,6 +428,7 @@ body {
     transform: scale(1.1);
 }
 
+/* card6 */
 #card6 {
     width: 253.5px;
     border: 2px solid black;
@@ -444,7 +443,6 @@ body {
     height: 290px;
     box-shadow: 0px 4.5px 6px lab(0% 0 0 / 0.486);
     transition: transform 1s ease;
-
 }
 
 #card6 img {
@@ -468,8 +466,8 @@ body {
     color: #fff;
     padding: 3rem;
     visibility: hidden;
-    padding-top: 14%;
-    padding-bottom: 18%;
+    padding-top: 10%;
+    padding-bottom: 14%;
     display: flex;
     justify-items: center;
     flex-direction: column;
@@ -479,7 +477,6 @@ body {
 }
 
 #card6:hover .details {
-
     visibility: visible;
 }
 
@@ -487,6 +484,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Divulga */
 #Divulga__title {
     background-color: rgba(255, 150, 17, 1);
     font-size: 25px;
@@ -521,13 +519,6 @@ body {
     text-align: justify;
 }
 
-/* Estilo padrão para os cards (já existe, mas vamos garantir largura) */
-.cards-container>div {
-    width: 300px;
-    /* Ajuste se necessário */
-}
-
-
 /* Footer */
 .footer {
     text-align: center;
@@ -536,17 +527,27 @@ body {
     color: white;
 }
 
+.footer_link {
+    color: white
+}
+
 
 /* Responsivo: Tablets (até 768px) */
 @media screen and (max-width: 768px) {
 
+    .nav-menu ul {
+        flex-direction: column;
+    }
 
+    .cards {
+        flex-wrap: wrap;
+        display: flex;
+    }
 
     #main__text,
     #Divulga__text {
         padding-left: 20px;
         padding-right: 20px;
-
     }
 
     #main__title,
@@ -557,6 +558,7 @@ body {
 
 /* Responsivo: Celulares (até 480px) */
 @media screen and (max-width: 480px) {
+
     .cards {
         padding: 10%;
     }
@@ -565,12 +567,11 @@ body {
     #Divulga__text {
         padding-left: 20px;
         padding-right: 20px;
-
     }
 
     #main__title,
     #Divulga__title {
         text-align: center;
+        font-size: 23px;
     }
 }
-
